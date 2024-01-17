@@ -1,0 +1,88 @@
+// FOOTER
+footer {
+	font-family: $font;
+	padding: 20px 100px;
+	margin-bottom: 20px;
+}
+.top-bar-footer {
+	background: #FF9500;
+	border-radius: 10px;
+	height: 5px;
+	width: 100%;
+}
+.footer {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	gap: 20px;
+}
+.links-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: end;
+	text-align: end;
+}
+.form-footer {
+	background-color: $background-color_2;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 18px 24px;
+	p{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	input{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	textarea{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	[type="submit"]{
+		margin-bottom: -20px;
+	}
+}
+.input-footer {
+	background: #FFF;
+	border-radius: 10px;
+	padding: 16px 30px;
+	max-width: 492px;
+	&::placeholder {
+		color: $wine-normal;
+	}
+}
+.footer-textarea {
+	background: #FFF;
+	border-radius: 10px;
+	padding: 16px 30px;
+	max-width: 492px;
+	resize: none;
+}
+
+.footer-copyright {
+	align-items: center;
+	display: flex;
+	font-family: $font;
+	justify-content: space-between;
+	padding: 20px 100px;
+}
+.footer-text-allrights {
+	color: $black-medium;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 188%;
+}
+.footer-text-termos {
+	color: $black-medium;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 188%;
+}
