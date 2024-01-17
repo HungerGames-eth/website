@@ -1,6 +1,10 @@
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require("gulp-autoprefixer");
+import gulp from "gulp";
+import gulpSass from "gulp-sass";
+import autoprefixer from "gulp-autoprefixer";
+
+import sassLib from "sass";
+
+const sass = gulpSass(sassLib);
 
 function compilaSass() {
   return gulp
