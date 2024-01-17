@@ -194,3 +194,10 @@ button {
   min-width: 120px;
   background: linear-gradient(170deg, #9d281e, #7f2323 6px, #782626 10px, #862829 50%, #782626);
 }
+
+.footer {
+  background-color: #1F1F1F;
+}
+.footer p {
+  color: #848D96;
+}
