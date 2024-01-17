@@ -1,38 +1,5 @@
-/*
-Theme Name: Alegria Card
-Theme URI: https://alegriacard.com.br/
-Text Domain: alegria-card
-Author: Ygor Combi
-Author URI: https://studiomodus.com.br/
-Description: Este é um site desenvolvido com a finalidade de mostrar os serviços da cartão de assinaturas da Alegria Card.
-Version: 1.0.3
-Requires at least: 6.2.2
-Requires PHP: 7.0
-*/
-
-// COLORS
-$black: #111;
-$black-medium: #222;
-
-$grey-dark: #6A6A6A;
-$grey-normal: #C5BAC2;
-$grey-light: #ECE9EB;
-
-$white: white;
-
-$wine-normal: #45223A;
-$wine-dark: #291423;
-
-$orange: #E68600;
-$orange-light: #FFDEB0;
-
-$blue: #2E318F;
-
 // FONT
 $font: 'Poppins', sans-serif;
-
-$background-color_2: #E3DEE1;
-$background-color_3: transparent;
 
 // RESPONSIVIDADE
 $container-xl: 1440px;
@@ -93,7 +60,6 @@ html{
 }
 html,
 body {
-	// overflow-x: hidden;
 	width: 100%;
 	height: 100%;
 }
@@ -103,7 +69,7 @@ body {
 	border: 0;
 	font-size: 100%;
 	text-decoration: none;
-	color: $black;
+	color: #150D0E;
 	font-family: $font;
 }
 
@@ -111,29 +77,6 @@ body {
   max-width: $container-xl !important;
   margin: 0 auto;
   padding: 0px 20px;
-}
-
-.banner-orange{
-	background: #FFF4E6 !important;
-	.texts-banner {
-		padding-bottom: 80px;
-	}
-	@include responsive(s){
-		img{
-			display: none;
-		}
-	}
-}
-
-.p-asterisco{
-	position: relative;
-	&::after{
-		position: absolute;
-		top: 5px;
-		right: -10px;
-		content: "*";
-		font-size: 1rem;
-	}
 }
 
 .flex-column{
@@ -183,9 +126,11 @@ body {
     gap: 20px;
   }
 }
+
 .border{
 	border-radius: 20px;
 }
+
 .flex-center {
   display: flex;
   flex-direction: column;
@@ -198,12 +143,6 @@ body {
   h2 {
     margin-bottom: 30px;
   }
-  p {
-    color: $black-medium;
-  }
-	&__inner {
-    position: relative;
-  }
   @include responsive(m){
     width: 100%;
     h2 {
@@ -214,310 +153,4 @@ body {
      line-height: 140%;
     }
   }
-}
-
-
-.container-lorenzo {
-	max-width: 100vw;
-	overflow-x: hidden;
-}
-.container-call-to-action {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
-	@include responsive(s){
-		bottom: 20px;
-		margin: 0 20px;
-		width: 90%;
-	}
-}
-.call-to-action {
-	display: flex;
-	align-items: center;
-	background-color: $orange;
-	width: 90%;
-	gap: 30px;
-	padding: 30px;
-	border-radius: 20px;
-	span{
-		width: 100%;
-	}
-	input{
-		background: #EEE;
-		border-radius: 10px;
-		padding: 12px 16px;
-		width: 100%;
-		box-sizing: border-box;
-	}
-	.btn-black{
-		background: $black !important;
-		border-radius: 10px !important;
-		margin: 20px 0 -30px 0;
-		margin-top: 20px;
-	&:hover {
-		background: transparent !important;
-	}
-	}
-	[data-name="email"]{
-		input{
-			margin-top: 20px;
-			width: 100%;
-			box-sizing: border-box;
-		}
-	}
-	@include responsive(s){
-		flex-direction: column;
-	}
-}
-.contain-peca-cartao {
-	align-items: center;
-	background-color: $white;
-	border-radius: 20px;
-	display: flex;
-	gap: 8px;
-	width: 100%;
-	padding: 0px 12px;
-	height: 150px;
-	@include responsive(s){
-		flex-direction: column;
-		height: unset;
-		padding: 20px;
-		img{
-			display: none;
-		}
-	}
-}
-
-.img-old {
-	img{
-		position: absolute;
-		bottom: 40px;
-		right: 40px;
-	}
-	@include responsive(s){
-		img{
-			display: none;
-		}
-	}
-}
-.peca-seu-cartao {
-	font-size: 32px;
-	font-weight: 700;
-	font-size: 30px;
-}
-.desc-peca-seu-cartao {
-	font-size: 0.875rem;
-	font-weight: 300;
-	@include responsive(m){
-		display: none;
-	}
-	@include responsive(s){
-		display: block;
-	}
-}
-.contain-form-callt {
-	width: 100%;
-	align-items: center;
-	background-color: $white;
-	border-radius: 20px;
-	padding: 20px;
-}
-.image-woman-card {
-	position: relative;
-	bottom: 10px;
-	height: 170px;
-}
-.form-two-inputs {
-	p{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: center;
-		gap: 20px;
-		margin-block-start: 0em;
-    margin-block-end: 0em;
-		@include responsive(s){
-			grid-template-columns: 1fr;
-		}
-	}
-}
-
-.left-box-beneficios-unicos {
-	border-radius: 10px;
-	background-color: $orange;
-	padding: 30px 60px;
-	text-align: center;
-}
-.left-planos-beneficios {
-	color: $white;
-	font-size: 22px;
-}
-.left-price-beneficios {
-	color: $white;
-	margin-top: 16px;
-	font-size: 22px;
-	font-weight: 700;
-}
-
-.escolher-plano-1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 16px 34px;
-	margin: 20px 0px;
-	border-radius: 10px;
-	color: $black-medium;
-	background-color: $background-color_3;
-	border: 2px solid #222;
-	font-weight: 600;
-	transition: .3s all;
-	cursor: pointer;
-}
-.escolher-plano-2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 16px 34px;
-	margin: 20px 0px;
-	border-radius: 10px;
-	color: $black-medium;
-	background-color: $background-color_3;
-	border: 2px solid #222;
-	font-weight: 600;
-	transition: .3s all;
-	cursor: pointer;
-}
-.escolher-plano {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 16px 34px;
-	margin: 20px 0px;
-	border-radius: 10px;
-	background-color: $background-color_3;
-	font-weight: 600;
-	transition: .3s all;
-	cursor: pointer;
-}
-.plano-1 {
-	color: $black-medium;
-	border: 2px solid #222;
-	&:hover {
-		background-color: $black-medium;
-		color: $white;
-	}
-}
-.plano-2 {
-	color: $white;
-	background-color: $blue;
-	border: 2px solid #2E318F;
-	&:hover {
-		background-color: $background-color_3;
-		color: $blue;
-	}
-}
-.plano-3 {
-	color: $white;
-	background-color: $orange;
-	border: 2px solid $orange;
-	&:hover {
-		background-color: $background-color_3;
-		color: $orange;
-	}
-}
-.plano-4 {
-	color: $white;
-	background-color: $black;
-	border: 2px solid #000;
-	&:hover {
-		background-color: $background-color_3;
-		color: $black;
-	}
-}
-
-.footer-link {
-	width: max-content;
-	text-align: end;
-}
-@media (max-width: 1040px) {
-	footer {
-		padding: 20px 80px;
-	}
-	.footer {
-		flex-direction: column;
-	}
-	.links-footer {
-		align-items: center;
-	}
-}
-@media (max-width: 780px) {
-	footer {
-		padding: 20px 30px;
-	}
-	.input-footer {
-		width: 250px;
-		max-width: 250px;
-	}
-	.footer-textarea {
-		width: 250px;
-		max-width: 250px;
-	}
-	.footer-copyright {
-		flex-direction: column;
-	}
-	.footer-text-allrights {
-		text-align: center;
-	}
-}
-@media (max-width: 260px) {
-	.input-footer {
-		width: 180px;
-		max-width: 180px;
-	}
-	.footer-textarea {
-		width: 180px;
-		max-width: 180px;
-	}
-}
-@media (max-width: 768px) {
-	header {
-		padding: 20px 30px;
-	}
-	.menu-icon {
-		display: flex;
-	}
-	.footer-copyright {
-		padding: 20px 30px;
-	}
-}
-@media (max-width: 940px) {
-
-	.contain-prices {
-		flex-direction: column;
-		width: 90%;
-	}
-	.image-woman-card {
-		height: 80px;
-		order: 2;
-	}
-	.peca-seu-cartao {
-		font-size: 30px;
-		text-align: center;
-	}
-	.text-price-card {
-		font-size: 36px;
-	}
-	.text-price-decimal {
-		font-size: 24px;
-	}
-}
-
-#wpadminbar {
-	a{
-		&:before{
-			display: none;
-		}
-	}
 }
