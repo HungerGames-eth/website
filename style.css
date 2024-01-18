@@ -139,6 +139,10 @@ body {
   }
 }
 
+.secao {
+  margin: 120px auto;
+}
+
 button {
   cursor: pointer;
 }
@@ -269,4 +273,40 @@ button {
 }
 .cta__txt {
   max-width: 500px;
+}
+
+.contract__grid {
+  background: #BAC5DA;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto 500px;
+}
+.contract__txt {
+  border-radius: 10px 0 0 10px;
+  padding: 60px;
+  gap: 20px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.contract__txt h2, .contract__txt h5, .contract__txt p {
+  color: #150D0E;
+}
+.contract__txt h2 {
+  font-size: 3.25rem;
+}
+.contract__txt h5 {
+  font-size: 1.5rem;
+}
+.contract__txt p {
+  font-size: 1.5rem;
+}
+.contract__img {
+  border-radius: 0 10px 10px 0;
+}
+.contract__img img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
 }
