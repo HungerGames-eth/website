@@ -128,23 +128,14 @@ body {
   justify-content: center;
 }
 
-.tit-center {
+.txt-50 {
   width: 50%;
+  margin: 0 auto;
   text-align: center;
 }
-.tit-center h2 {
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 1140px) {
-  .tit-center {
+@media screen and (max-width: 740px) {
+  .txt-50 {
     width: 100%;
-  }
-  .tit-center h2 {
-    margin-bottom: 20px;
-  }
-  .tit-center p {
-    font-size: 1rem;
-    line-height: 140%;
   }
 }
 
@@ -215,7 +206,7 @@ button {
 }
 
 .footer {
-  padding: 40px 20px;
+  padding: 60px 20px 20px 20px;
 }
 .footer h2, .footer h5 {
   color: #fff;
@@ -261,4 +252,21 @@ button {
 }
 .footer__social a:hover {
   opacity: 0.7;
+}
+
+.cta {
+  background: url("assets/img/bg-wallpaper.webp") no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+.cta h2 {
+  font-size: 3.25rem;
+  margin-bottom: 20px;
+}
+.cta p {
+  font-size: 2rem;
+  color: #fff;
+}
+.cta__txt {
+  max-width: 500px;
 }

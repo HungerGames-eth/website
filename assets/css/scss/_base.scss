@@ -146,20 +146,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.tit-center {
+
+.txt-50{
   width: 50%;
+  margin: 0 auto;
   text-align: center;
-  h2 {
-    margin-bottom: 30px;
-  }
-  @include responsive(m){
+  @include responsive(s){
     width: 100%;
-    h2 {
-      margin-bottom: 20px;
-    }
-    p {
-     font-size: 1rem;
-     line-height: 140%;
-    }
   }
 }
