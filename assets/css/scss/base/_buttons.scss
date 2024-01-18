@@ -27,6 +27,32 @@ button {
 	}
 }
 
+.btn-active{
+	.mb-body{
+		background: linear-gradient(170deg, #339d1e, #357f23 6px, #347826 10px, #38992e 50%, #347826);
+	}
+	.mb-edge{
+    border-top-color: #5e9e36;
+    border-bottom-color: #1e3a10;
+    border-left-color: #366a22;
+    border-right-color: #265a1c;
+    background: radial-gradient(#267516 66%, #267516);
+	}
+}
+
+.btn-locked{
+	.mb-body{
+		background: linear-gradient(153deg, #808080 0%, #808080 9.83%, #808080 16.38%, #7A7A7A 50%, #808080 100%);
+	}
+	.mb-edge{
+		border-top-color: #A3A3A3;
+    border-bottom-color: #A3A3A3;
+    border-left-color: #808080;
+    border-right-color: #A3A3A3;
+    background: radial-gradient(#808080 66%, #A3A3A3);
+	}
+}
+
 .mb-overlay{
 	position: absolute;
 	top: 4px;

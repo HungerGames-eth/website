@@ -1,0 +1,36 @@
+.quest{
+  background: url("assets/img/quests-wallpaper.webp") no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  h2,p,span{
+    color: #fff;
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+  &__txt{
+    p{
+      font-size: 2rem;
+      color: #CFCECE;
+
+    }
+    gap: 20px;
+    align-items: flex-start;
+  }
+  &__tasks{
+    grid-column: span 3;
+    ul{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    li{
+      border: 2px solid white;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

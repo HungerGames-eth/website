@@ -166,6 +166,28 @@ button {
   opacity: 0.08;
 }
 
+.btn-active .mb-body {
+  background: linear-gradient(170deg, #339d1e, #357f23 6px, #347826 10px, #38992e 50%, #347826);
+}
+.btn-active .mb-edge {
+  border-top-color: #5e9e36;
+  border-bottom-color: #1e3a10;
+  border-left-color: #366a22;
+  border-right-color: #265a1c;
+  background: radial-gradient(#267516 66%, #267516);
+}
+
+.btn-locked .mb-body {
+  background: linear-gradient(153deg, #808080 0%, #808080 9.83%, #808080 16.38%, #7A7A7A 50%, #808080 100%);
+}
+.btn-locked .mb-edge {
+  border-top-color: #A3A3A3;
+  border-bottom-color: #A3A3A3;
+  border-left-color: #808080;
+  border-right-color: #A3A3A3;
+  background: radial-gradient(#808080 66%, #A3A3A3);
+}
+
 .mb-overlay {
   position: absolute;
   top: 4px;
@@ -258,6 +280,10 @@ button {
   opacity: 0.7;
 }
 
+h2 {
+  font-size: 3.25rem;
+}
+
 .cta {
   background: url("assets/img/bg-wallpaper.webp") no-repeat;
   background-size: cover;
@@ -292,9 +318,6 @@ button {
 .contract__txt h2, .contract__txt h5, .contract__txt p {
   color: #150D0E;
 }
-.contract__txt h2 {
-  font-size: 3.25rem;
-}
 .contract__txt h5 {
   font-size: 1.5rem;
 }
@@ -309,4 +332,46 @@ button {
   -o-object-fit: cover;
   object-fit: cover;
   display: block;
+}
+
+.quest {
+  background: url("assets/img/quests-wallpaper.webp") no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+.quest h2, .quest p, .quest span {
+  color: #fff;
+}
+.quest__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.quest__txt {
+  gap: 20px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.quest__txt p {
+  font-size: 2rem;
+  color: #CFCECE;
+}
+.quest__tasks {
+  grid-column: span 3;
+}
+.quest__tasks ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.quest__tasks li {
+  border: 2px solid white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
 }
