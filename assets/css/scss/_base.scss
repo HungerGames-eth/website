@@ -74,9 +74,18 @@ body {
 }
 
 .container {
-  max-width: $container-xl !important;
-  margin: 0 auto;
-  padding: 0px 20px;
+	max-width: $container-xl;
+	margin: 0 auto;
+	border: 2px solid red;
+  @include responsive(m){
+    border: 2px solid greenyellow;
+  }
+  @include responsive(sm){
+    border: 2px solid blue;
+  }
+  @include responsive(s){
+    border: 2px solid tomato;
+  }
 }
 
 .flex-column{
