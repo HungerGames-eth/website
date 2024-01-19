@@ -1,8 +1,23 @@
 .tokenomics{
+  padding: 120px 0;
   &__grid{
+    padding: 60px 0;
     display: grid;
     grid-template-columns: 150px 1fr 150px;
-    gap: 40px;
+    gap: 120px;
     justify-items: center;
+    align-items: center;
+  }
+  p{
+    font-size: 1.125rem;
+  }
+  span{
+    font-size: 1.5rem;
+    margin-top: -10px;
+  }
+  li{
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 60px;
   }
 }
