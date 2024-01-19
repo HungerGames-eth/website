@@ -143,6 +143,10 @@ body {
   margin: 120px auto;
 }
 
+.ul {
+  list-style: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -291,8 +295,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+.font-1 {
   font-family: "Bank Gothic Bold", serif;
+}
+
+.font-2 {
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -388,4 +397,11 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   gap: 20px;
+}
+
+.tokenomics__grid {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  gap: 40px;
+  justify-items: center;
 }
