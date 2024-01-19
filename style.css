@@ -280,6 +280,21 @@ button {
   opacity: 0.7;
 }
 
+@font-face {
+  font-family: "Bank Gothic Bold";
+  src: url("assets/type/BankGothicBold.ttf") format("truetype");
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Bank Gothic Bold", serif;
+}
+
 h2 {
   font-size: 3.25rem;
 }
@@ -357,7 +372,7 @@ h2 {
   align-items: flex-start;
 }
 .quest__txt p {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #CFCECE;
 }
 .quest__tasks {
@@ -369,7 +384,6 @@ h2 {
   gap: 40px;
 }
 .quest__tasks li {
-  border: 2px solid white;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
