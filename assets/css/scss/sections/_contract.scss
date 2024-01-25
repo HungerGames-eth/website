@@ -28,6 +28,31 @@
       display: block;
     }
   }
+  @include responsive(m){
+    margin: 0 20px;
+    &__grid{
+      grid-template-columns: auto 400px;
+    }
+    &__txt{
+      padding: 60px 20px;
+      p{
+        font-size: 1.125rem;
+      }
+    }
+  }
+  @include responsive(sm){
+    &__grid{
+      grid-template-columns: 1fr;
+    }
+    &__img{
+      width: 100%;
+      display: none;
+      img{
+        object-position: top -50px left 1px;
+        max-height: 400px;
+      }
+    }
+  }
 }
 
 #contract-1{
@@ -41,6 +66,43 @@
       }
       p{
         font-size: 1.125rem;
+      }
+    }
+  }
+  @include responsive(m){
+    .contract{
+      &__grid{
+        grid-template-columns: 400px auto;
+      }
+    }
+  }
+  @include responsive(sm){
+    .contract{
+      &__grid{
+        grid-template-columns: 1fr;
+      }
+      &__img{
+        width: 100%;
+        display: block;
+        img{
+          object-position: top;
+          max-height: 400px;
+        }
+      }
+    }
+  }
+  @include responsive(s){
+    .contract{
+      &__txt{
+        padding: 0 20px 20px 20px;
+        h2{
+          font-size: 2.5rem !important;
+        }
+      }
+      &__img{
+        img{
+          display: none !important;
+        }
       }
     }
   }

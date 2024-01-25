@@ -12,12 +12,12 @@
     align-items: center;
   }
   &__txt{
+    gap: 20px;
+    align-items: flex-start;
     p{
       font-size: 1.75rem;
       color: #CFCECE;
     }
-    gap: 20px;
-    align-items: flex-start;
   }
   &__tasks{
     grid-column: span 3;
@@ -35,6 +35,37 @@
         border-radius: 150px;
         object-fit: cover;
         display: block;
+      }
+    }
+  }
+  @include responsive(m){
+   &__grid{
+    margin: 0 20px;
+   }
+   &__txt{
+      p{
+        font-size: 1.25rem;
+      }
+    }
+  }
+  @include responsive(sm){
+    &__grid{
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  }
+  @include responsive(s){
+    &__grid{
+      gap: 60px 0;
+    }
+    &__txt{
+      h2,p{
+        text-align: center;
+      }
+    }
+    &__tasks{
+      ul{
+        grid-template-columns: 1fr;
       }
     }
   }

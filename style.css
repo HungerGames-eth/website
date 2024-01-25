@@ -283,6 +283,12 @@ button {
 .footer__social a:hover {
   opacity: 0.7;
 }
+@media screen and (max-width: 740px) {
+  .footer__social ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 
 @font-face {
   font-family: "Bank Gothic Bold";
@@ -324,6 +330,14 @@ h2 {
 .cta__txt {
   max-width: 500px;
 }
+@media screen and (max-width: 740px) {
+  .cta h2 {
+    font-size: 2.75rem !important;
+  }
+  .cta p {
+    font-size: 1.5rem !important;
+  }
+}
 
 .contract__grid {
   background: #BAC5DA;
@@ -357,6 +371,34 @@ h2 {
   object-fit: cover;
   display: block;
 }
+@media screen and (max-width: 1140px) {
+  .contract {
+    margin: 0 20px;
+  }
+  .contract__grid {
+    grid-template-columns: auto 400px;
+  }
+  .contract__txt {
+    padding: 60px 20px;
+  }
+  .contract__txt p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .contract__grid {
+    grid-template-columns: 1fr;
+  }
+  .contract__img {
+    width: 100%;
+    display: none;
+  }
+  .contract__img img {
+    -o-object-position: top -50px left 1px;
+    object-position: top -50px left 1px;
+    max-height: 400px;
+  }
+}
 
 #contract-1 .contract__grid {
   grid-template-columns: 500px auto;
@@ -366,6 +408,36 @@ h2 {
 }
 #contract-1 .contract__txt p {
   font-size: 1.125rem;
+}
+@media screen and (max-width: 1140px) {
+  #contract-1 .contract__grid {
+    grid-template-columns: 400px auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  #contract-1 .contract__grid {
+    grid-template-columns: 1fr;
+  }
+  #contract-1 .contract__img {
+    width: 100%;
+    display: block;
+  }
+  #contract-1 .contract__img img {
+    -o-object-position: top;
+    object-position: top;
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 740px) {
+  #contract-1 .contract__txt {
+    padding: 0 20px 20px 20px;
+  }
+  #contract-1 .contract__txt h2 {
+    font-size: 2.5rem !important;
+  }
+  #contract-1 .contract__img img {
+    display: none !important;
+  }
 }
 
 .quest {
@@ -416,6 +488,31 @@ h2 {
   object-fit: cover;
   display: block;
 }
+@media screen and (max-width: 1140px) {
+  .quest__grid {
+    margin: 0 20px;
+  }
+  .quest__txt p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .quest__grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .quest__grid {
+    gap: 60px 0;
+  }
+  .quest__txt h2, .quest__txt p {
+    text-align: center;
+  }
+  .quest__tasks ul {
+    grid-template-columns: 1fr;
+  }
+}
 
 .tokenomics {
   padding: 120px 0;
@@ -443,6 +540,11 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1140px) {
+  .tokenomics {
+    display: none;
+  }
 }
 
 .hero {
@@ -495,4 +597,9 @@ h2 {
 }
 .hero__txt .btn {
   margin-top: 40px;
+}
+@media screen and (max-width: 1140px) {
+  .hero {
+    display: none;
+  }
 }

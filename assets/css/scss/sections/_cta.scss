@@ -13,4 +13,12 @@
   &__txt{
     max-width: 500px;
   }
+  @include responsive(s){
+    h2{
+      font-size: 2.75rem !important;
+    }
+    p{
+      font-size: 1.5rem !important;
+    }
+  }
 }

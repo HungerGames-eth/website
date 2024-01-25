@@ -46,4 +46,11 @@
       }
     }
   }
+  @include responsive(s){
+    &__social{
+      ul{
+        flex-wrap: wrap;
+      }
+    }
+  }
 }
