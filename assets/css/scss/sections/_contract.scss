@@ -35,5 +35,13 @@
     &__grid{
       grid-template-columns: 500px auto;
     }
+    &__txt{
+      h4{
+        margin-bottom: -10px;
+      }
+      p{
+        font-size: 1.125rem;
+      }
+    }
   }
 }

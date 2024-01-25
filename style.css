@@ -361,6 +361,12 @@ h2 {
 #contract-1 .contract__grid {
   grid-template-columns: 500px auto;
 }
+#contract-1 .contract__txt h4 {
+  margin-bottom: -10px;
+}
+#contract-1 .contract__txt p {
+  font-size: 1.125rem;
+}
 
 .quest {
   background: url("assets/img/quests-wallpaper.webp") no-repeat;
@@ -402,6 +408,14 @@ h2 {
   align-items: center;
   gap: 20px;
 }
+.quest__tasks li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+}
 
 .tokenomics {
   padding: 120px 0;
@@ -429,4 +443,56 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 60px;
+}
+
+.hero {
+  background: url("assets/img/cenario.webp") no-repeat;
+  background-size: cover;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 120px 0 0 0;
+}
+.hero__txt {
+  padding: 20px;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hero__txt img {
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  z-index: 1;
+}
+.hero__txt-box, .hero__txt .btn {
+  position: relative;
+  z-index: 10;
+}
+.hero__txt-box {
+  background-color: #977933;
+  padding: 20px;
+  margin-right: 160px;
+  margin-left: 70px;
+}
+.hero__txt-box .font-1 {
+  background-color: #150D0E;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+.hero__txt-box p {
+  color: #4A2222;
+}
+.hero__txt-box input {
+  margin-top: 20px;
+}
+.hero__txt .btn {
+  margin-top: 40px;
 }

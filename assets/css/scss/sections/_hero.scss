@@ -1,0 +1,49 @@
+.hero{
+  background: url("assets/img/cenario.webp") no-repeat;
+  background-size: cover;
+  &__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 120px 0 0 0;
+  }
+  &__txt{
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 120px;
+      z-index: 1;
+    }
+    &-box, .btn{
+      position: relative;
+      z-index: 10;
+    }
+    &-box{
+      background-color: #977933;
+      padding: 20px;
+      margin-right: 160px;
+      margin-left: 70px;
+      .font-1{
+        background-color: #150D0E;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+      }
+      p{
+        color: #4A2222;
+      }
+      input{
+        margin-top: 20px;
+      }
+    }
+    .btn{
+      margin-top: 40px;
+    }
+  }
+}

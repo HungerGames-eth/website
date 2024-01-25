@@ -15,7 +15,6 @@
     p{
       font-size: 1.75rem;
       color: #CFCECE;
-
     }
     gap: 20px;
     align-items: flex-start;
@@ -30,6 +29,13 @@
     li{
       align-items: center;
       gap: 20px;
+      img{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        object-fit: cover;
+        display: block;
+      }
     }
   }
 }
