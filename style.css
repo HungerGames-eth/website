@@ -518,7 +518,7 @@ h2 {
   padding: 120px 0;
 }
 .tokenomics__grid {
-  padding: 60px 0;
+  padding: 60px 180px;
   display: grid;
   grid-template-columns: 150px 1fr 150px;
   gap: 120px;
@@ -533,6 +533,7 @@ h2 {
 .tokenomics span {
   font-size: 1.5rem;
   margin-top: -10px;
+  text-align: center;
 }
 .tokenomics li {
   gap: 10px;
@@ -542,8 +543,23 @@ h2 {
   margin-bottom: 60px;
 }
 @media screen and (max-width: 1140px) {
-  .tokenomics {
-    display: none;
+  .tokenomics__grid {
+    padding: 60px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tokenomics__img {
+    grid-column: span 2;
+  }
+  .tokenomics__info-1 {
+    grid-row: 2;
+  }
+}
+@media screen and (max-width: 740px) {
+  .tokenomics__grid {
+    gap: 60px 20px;
+  }
+  .tokenomics__img {
+    max-width: 100%;
   }
 }
 

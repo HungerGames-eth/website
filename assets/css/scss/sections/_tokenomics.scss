@@ -1,7 +1,7 @@
 .tokenomics{
   padding: 120px 0;
   &__grid{
-    padding: 60px 0;
+    padding: 60px 180px;
     display: grid;
     grid-template-columns: 150px 1fr 150px;
     gap: 120px;
@@ -14,6 +14,7 @@
   span{
     font-size: 1.5rem;
     margin-top: -10px;
+    text-align: center;
   }
   li{
     gap: 10px;
@@ -21,6 +22,23 @@
     margin-bottom: 60px;
   }
   @include responsive(m){
-    display: none;
+    &__grid{
+      padding: 60px 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__img{
+      grid-column: span 2;
+    }
+    &__info-1{
+      grid-row: 2;
+    }
+  }
+  @include responsive(s){
+    &__grid{
+      gap: 60px 20px;
+    }
+    &__img{
+      max-width: 100%;
+    }
   }
 }
