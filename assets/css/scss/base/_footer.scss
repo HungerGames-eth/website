@@ -1,54 +1,54 @@
-#footer{
+#footer {
   background-color: #1F1F1F;
 }
-.footer{
+.footer {
   padding: 60px 20px 20px 20px;
-  h2,h5{
+  h2,h5 {
     color: #fff;
   }
-  h2{
+  h2 {
     font-size: 2rem;
   }
-  h5{
+  h5 {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-  p, a{
+  p, a {
     color: #848D96;
   }
-  &__disclaimer{
+  &__disclaimer {
     border-radius: 8px;
 
     border: 1px solid rgba(255, 255, 255, 0.14);
     padding: 20px;
     margin-top: 20px;
     margin: 20px 0;
-    p{
+    p {
       font-size: 0.875rem;
     }
   }
-  &__copy{
+  &__copy {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.14);
   }
-  &__social{
-    ul{
+  &__social {
+    ul {
       display: flex;
       gap: 20px;
       margin-top: 20px;
     }
-    a{
+    a {
       display: flex;
       gap: 10px;
       transition: opacity .3 ease;
-      &:hover{
+      &:hover {
         opacity: .7;
       }
     }
   }
   @include responsive(s){
-    &__social{
-      ul{
+    &__social {
+      ul {
         flex-wrap: wrap;
       }
     }

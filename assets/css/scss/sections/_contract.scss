@@ -1,28 +1,28 @@
-.contract{
-  &__grid{
+.contract {
+  &__grid {
     background: #BAC5DA;
     max-width: 1200px;
     display: grid;
     grid-template-columns: auto 500px;
   }
-  &__txt{
+  &__txt {
     border-radius: 10px 0 0 10px;
     padding: 60px;
     gap: 20px;
     align-items: flex-start;
-    h2, h5, p{
+    h2, h5, p {
       color: #150D0E;
-    } 
-    h5{
+    }
+    h5 {
       font-size: 1.5rem;
     }
-    p{
+    p {
       font-size: 1.5rem;
     }
   }
-  &__img{
+  &__img {
     border-radius: 0 10px 10px 0;
-    img{
+    img {
       width: 100%;
       object-fit: cover;
       display: block;
@@ -30,24 +30,24 @@
   }
   @include responsive(m){
     margin: 0 20px;
-    &__grid{
+    &__grid {
       grid-template-columns: auto 400px;
     }
-    &__txt{
+    &__txt {
       padding: 60px 20px;
-      p{
+      p {
         font-size: 1.125rem;
       }
     }
   }
   @include responsive(sm){
-    &__grid{
+    &__grid {
       grid-template-columns: 1fr;
     }
-    &__img{
+    &__img {
       width: 100%;
       display: none;
-      img{
+      img {
         object-position: top -50px left 1px;
         max-height: 400px;
       }
@@ -55,36 +55,36 @@
   }
 }
 
-#contract-1{
-  .contract{
-    &__grid{
+#contract-1 {
+  .contract {
+    &__grid {
       grid-template-columns: 500px auto;
     }
-    &__txt{
-      h4{
+    &__txt {
+      h4 {
         margin-bottom: -10px;
       }
-      p{
+      p {
         font-size: 1.125rem;
       }
     }
   }
   @include responsive(m){
-    .contract{
-      &__grid{
+    .contract {
+      &__grid {
         grid-template-columns: 400px auto;
       }
     }
   }
   @include responsive(sm){
-    .contract{
-      &__grid{
+    .contract {
+      &__grid {
         grid-template-columns: 1fr;
       }
-      &__img{
+      &__img {
         width: 100%;
         display: block;
-        img{
+        img {
           object-position: top;
           max-height: 400px;
         }
@@ -92,15 +92,15 @@
     }
   }
   @include responsive(s){
-    .contract{
-      &__txt{
+    .contract {
+      &__txt {
         padding: 0 20px 20px 20px;
-        h2{
+        h2 {
           font-size: 2.5rem !important;
         }
       }
-      &__img{
-        img{
+      &__img {
+        img {
           display: none !important;
         }
       }

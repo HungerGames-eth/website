@@ -55,7 +55,7 @@ $container-s: 540px;
     }
   }
 }
-html{
+html {
 	scroll-behavior: smooth;
 }
 html,
@@ -88,12 +88,12 @@ body {
   }
 }
 
-.flex-column{
+.flex-column {
 	display: flex;
 	flex-direction: column;
 }
 
-.flex-wrap{
+.flex-wrap {
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -136,7 +136,7 @@ body {
   }
 }
 
-.border{
+.border {
 	border-radius: 20px;
 }
 
@@ -147,7 +147,7 @@ body {
   justify-content: center;
 }
 
-.txt-50{
+.txt-50 {
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -160,6 +160,6 @@ body {
   margin: 120px auto;
 }
 
-.ul{
+.ul {
   list-style: none;
 }

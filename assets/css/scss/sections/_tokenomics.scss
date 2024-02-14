@@ -1,6 +1,6 @@
-.tokenomics{
+.tokenomics {
   padding: 120px 0;
-  &__grid{
+  &__grid {
     padding: 60px 180px;
     display: grid;
     grid-template-columns: 150px 1fr 150px;
@@ -8,36 +8,36 @@
     justify-items: center;
     align-items: center;
   }
-  p{
+  p {
     font-size: 1.125rem;
   }
-  span{
+  span {
     font-size: 1.5rem;
     margin-top: -10px;
     text-align: center;
   }
-  li{
+  li {
     gap: 10px;
     align-items: center;
     margin-bottom: 60px;
   }
   @include responsive(m){
-    &__grid{
+    &__grid {
       padding: 60px 20px;
       grid-template-columns: 1fr 1fr;
     }
-    &__img{
+    &__img {
       grid-column: span 2;
     }
-    &__info-1{
+    &__info-1 {
       grid-row: 2;
     }
   }
   @include responsive(s){
-    &__grid{
+    &__grid {
       gap: 60px 20px;
     }
-    &__img{
+    &__img {
       max-width: 100%;
     }
   }

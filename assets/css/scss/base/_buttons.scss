@@ -2,7 +2,7 @@ button {
 	cursor: pointer;
 }
 
-.btn{
+.btn {
   font-size: 1.125rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -15,23 +15,23 @@ button {
 	padding: 0;
 	border: 0;
 
-	span{
+	span {
 		color: #ebb275;
 		text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.87);
 	}
 
-	&:hover{
-		.mb-overlay{
+	&:hover {
+		.mb-overlay {
 			opacity: 0.08;
 		}
 	}
 }
 
-.btn-active{
-	.mb-body{
+.btn-active {
+	.mb-body {
 		background: linear-gradient(170deg, #339d1e, #357f23 6px, #347826 10px, #38992e 50%, #347826);
 	}
-	.mb-edge{
+	.mb-edge {
     border-top-color: #5e9e36;
     border-bottom-color: #1e3a10;
     border-left-color: #366a22;
@@ -40,11 +40,11 @@ button {
 	}
 }
 
-.btn-locked{
-	.mb-body{
+.btn-locked {
+	.mb-body {
 		background: linear-gradient(153deg, #808080 0%, #808080 9.83%, #808080 16.38%, #7A7A7A 50%, #808080 100%);
 	}
-	.mb-edge{
+	.mb-edge {
 		border-top-color: #A3A3A3;
     border-bottom-color: #A3A3A3;
     border-left-color: #808080;
@@ -53,7 +53,7 @@ button {
 	}
 }
 
-.mb-overlay{
+.mb-overlay {
 	position: absolute;
 	top: 4px;
 	bottom: 4px;
@@ -64,13 +64,13 @@ button {
 	pointer-events: none;
 }
 
-.mb-ring{
+.mb-ring {
 	padding: 5px;
 	background: linear-gradient(to bottom, #ba8550, #ba8550 3px, #724622 4px, #ba8550);
 	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px 2px;
 }
 
-.mb-edge{
+.mb-edge {
 	border: 3px solid #000;
 	border-top-color: #9e4436;
 	border-bottom-color: #3a1510;
@@ -84,7 +84,7 @@ button {
 	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px 2px;
 }
 
-.mb-body{
+.mb-body {
 	padding: 8px 8px;
 	min-width: 120px;
 	background: linear-gradient(170deg, #9d281e, #7f2323 6px, #782626 10px, #862829 50%, #782626);

@@ -1,35 +1,35 @@
-.quest{
+.quest {
   background: url("assets/img/quests-wallpaper.webp") no-repeat;
   background-size: cover;
   padding: 120px 0;
-  h2,p,span{
+  h2,p,span {
     color: #fff;
   }
-  &__grid{
+  &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     align-items: center;
   }
-  &__txt{
+  &__txt {
     gap: 20px;
     align-items: flex-start;
-    p{
+    p {
       font-size: 1.75rem;
       color: #CFCECE;
     }
   }
-  &__tasks{
+  &__tasks {
     grid-column: span 3;
-    ul{
+    ul {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
     }
-    li{
+    li {
       align-items: center;
       gap: 20px;
-      img{
+      img {
         width: 150px;
         height: 150px;
         border-radius: 150px;
@@ -39,32 +39,32 @@
     }
   }
   @include responsive(m){
-   &__grid{
+   &__grid {
     margin: 0 20px;
    }
-   &__txt{
-      p{
+   &__txt {
+      p {
         font-size: 1.25rem;
       }
     }
   }
   @include responsive(sm){
-    &__grid{
+    &__grid {
       grid-template-columns: 1fr;
       gap: 60px;
     }
   }
   @include responsive(s){
-    &__grid{
+    &__grid {
       gap: 60px 0;
     }
-    &__txt{
-      h2,p{
+    &__txt {
+      h2,p {
         text-align: center;
       }
     }
-    &__tasks{
-      ul{
+    &__tasks {
+      ul {
         grid-template-columns: 1fr;
       }
     }

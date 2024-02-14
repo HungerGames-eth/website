@@ -1,32 +1,32 @@
-.hero{
+.hero {
   background: url("assets/img/cenario.webp") no-repeat;
   background-size: cover;
-  &__grid{
+  &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 120px 0 0 0;
   }
-  &__txt{
+  &__txt {
     padding: 20px;
     position: relative;
     align-items: center;
-    img{
+    img {
       position: absolute;
       bottom: 0;
       right: 120px;
       z-index: 1;
     }
-    &-box, .btn{
+    &-box, .btn {
       position: relative;
       z-index: 10;
     }
-    &-box{
+    &-box {
       background-color: #977933;
       padding: 20px;
       margin-right: 160px;
       margin-left: 70px;
-      .font-1{
+      .font-1 {
         background-color: #150D0E;
         color: white;
         padding: 5px 10px;
@@ -35,14 +35,14 @@
         display: block;
         text-align: center;
       }
-      p{
+      p {
         color: #4A2222;
       }
-      input{
+      input {
         margin-top: 20px;
       }
     }
-    .btn{
+    .btn {
       margin-top: 40px;
     }
   }

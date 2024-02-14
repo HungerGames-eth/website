@@ -1,23 +1,23 @@
-.cta{
+.cta {
   background: url("assets/img/bg-wallpaper.webp") no-repeat;
   background-size: cover;
   padding: 120px 0;
-  h2{
+  h2 {
     font-size: 3.25rem;
     margin-bottom: 20px;
   }
-  p{
+  p {
     font-size: 2rem;
     color: #fff;
   }
-  &__txt{
+  &__txt {
     max-width: 500px;
   }
   @include responsive(s){
-    h2{
+    h2 {
       font-size: 2.75rem !important;
     }
-    p{
+    p {
       font-size: 1.5rem !important;
     }
   }
