@@ -49,11 +49,28 @@
   &__item {
     display: flex;
     align-items: center;
-    color: #4A2222;
+    color: #150D0E;
     column-gap: 0.25rem;
 
+    &.finished {
+      color: #4A2222;
+
+      .finished-icon {
+        display: block;
+      }
+
+      .pending-icon {
+        display: none;
+      }
+    }
+
+    p,
     span {
       color: inherit;
+    }
+
+    .finished-icon {
+      display: none;
     }
   }
   @include responsive(m) {

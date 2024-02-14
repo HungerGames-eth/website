@@ -55,6 +55,10 @@ async function retrieveInfoData() {
 
     const $max = $info.querySelector('[data-info-text="max"]');
     $max.textContent = formatNumber(infoData.max[info]);
+
+    if (infoData[info] >= infoData.max[info]) {
+      $info.parentElement.classList.add('finished');
+    }
   });
 
   const $progressBar = document.querySelector('.progress-bar');

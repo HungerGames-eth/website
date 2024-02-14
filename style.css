@@ -665,13 +665,26 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4A2222;
+  color: #150D0E;
   -webkit-column-gap: 0.25rem;
   -moz-column-gap: 0.25rem;
   column-gap: 0.25rem;
 }
+.hero__item.finished {
+  color: #4A2222;
+}
+.hero__item.finished .finished-icon {
+  display: block;
+}
+.hero__item.finished .pending-icon {
+  display: none;
+}
+.hero__item p,
 .hero__item span {
   color: inherit;
+}
+.hero__item .finished-icon {
+  display: none;
 }
 @media screen and (max-width: 1140px) {
   .hero {
