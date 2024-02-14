@@ -71,6 +71,7 @@ body {
 	text-decoration: none;
 	color: #150D0E;
 	font-family: $font;
+  box-sizing: border-box;
 }
 
 .container {
@@ -162,4 +163,8 @@ body {
 
 .ul {
   list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

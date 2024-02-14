@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="no-scroll">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,24 +23,32 @@
 </head>
 <body>
 
-  <!-- p1 -->
-  <a href="#" class="btn btn-pri">
-    <div class="mb-ring">
-      <div class="mb-edge">
-        <div class="mb-body">
-          <span>
-            Enter the arena
-          </span>
+  <div class="intro">
+    <div class="intro__welcome" style="--bg-img: url('./assets/img/bg-wallpaper.webp')">
+      <button class="btn btn-pri intro__welcome__button">
+        <div class="mb-ring">
+          <div class="mb-edge">
+            <div class="mb-body">
+              <span>
+                Entrar no site
+              </span>
+            </div>
+          </div>
         </div>
+        <div class="mb-overlay"></div>
+      </button>
+    </div>
+
+    <div class="intro__video">
+      <div class="intro__video__content">
+        <video src="./assets/video/welcome-video.mp4" controls></video>
+      </div>
+      <div class="intro__video__footer">
+        <button class="intro__video__full-screen">Tela cheia</button>
+        <button class="intro__video__skip">Pular introdução</button>
       </div>
     </div>
-    <div class="mb-overlay"></div>
-  </a>
-
-  <!-- p2 -->
-  video
-  <button>Full Screen</button>
-  <button>Skip Intro</button>
+  </div>
 
   <!-- HEADER -->
   <header id="header">
@@ -339,5 +347,6 @@
     </div>
   </footer>
 
+  <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>
