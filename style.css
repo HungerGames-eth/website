@@ -325,7 +325,6 @@ h2 {
   width: 100%;
   position: relative;
   margin: 1rem 0;
-  --progress-bar-percentage: 100%;
 }
 .progress-bar__line {
   width: 100%;
@@ -658,6 +657,21 @@ h2 {
 }
 .hero__txt .btn {
   margin-top: 40px;
+}
+.hero__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #4A2222;
+  -webkit-column-gap: 0.25rem;
+  -moz-column-gap: 0.25rem;
+  column-gap: 0.25rem;
+}
+.hero__item span {
+  color: inherit;
 }
 @media screen and (max-width: 1140px) {
   .hero {

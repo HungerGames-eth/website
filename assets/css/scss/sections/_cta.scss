@@ -13,7 +13,7 @@
   &__txt {
     max-width: 500px;
   }
-  @include responsive(s){
+  @include responsive(s) {
     h2 {
       font-size: 2.75rem !important;
     }

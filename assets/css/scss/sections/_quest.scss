@@ -38,7 +38,7 @@
       }
     }
   }
-  @include responsive(m){
+  @include responsive(m) {
    &__grid {
     margin: 0 20px;
    }
@@ -48,13 +48,13 @@
       }
     }
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     &__grid {
       grid-template-columns: 1fr;
       gap: 60px;
     }
   }
-  @include responsive(s){
+  @include responsive(s) {
     &__grid {
       gap: 60px 0;
     }

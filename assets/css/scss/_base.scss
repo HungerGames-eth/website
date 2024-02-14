@@ -78,13 +78,13 @@ body {
 	max-width: $container-xl;
 	margin: 0 auto;
 	border: 2px solid red;
-  @include responsive(m){
+  @include responsive(m) {
     border: 2px solid greenyellow;
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     border: 2px solid blue;
   }
-  @include responsive(s){
+  @include responsive(s) {
     border: 2px solid tomato;
   }
 }
@@ -152,7 +152,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  @include responsive(s){
+  @include responsive(s) {
     width: 100%;
   }
 }

@@ -46,7 +46,17 @@
       margin-top: 40px;
     }
   }
-  @include responsive(m){
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #4A2222;
+    column-gap: 0.25rem;
+
+    span {
+      color: inherit;
+    }
+  }
+  @include responsive(m) {
     display: none;
   }
 }

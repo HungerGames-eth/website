@@ -1,0 +1,25 @@
+{
+  "quests": {
+    "#1": {
+      "holders": 300,
+      "volume": 300000,
+      "marketCap": 300000
+    },
+    "#2": {
+      "holders": 500,
+      "volume": 600000,
+      "marketCap": 600000
+    },
+    "#3": {
+      "holders": 700,
+      "volume": 1000000,
+      "marketCap": 1000000
+    }
+  },
+  "data": {
+    "currentQuest": 1,
+    "holders": 100,
+    "volume": 300000,
+    "marketCap": 300000
+  }
+}
