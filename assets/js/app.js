@@ -3,7 +3,11 @@ function bootstrap() {
   $enterSiteButton?.addEventListener('click', handleEnterSiteButtonClick);
 
   const $fullScreenButton = document.querySelector('.intro__video__full-screen');
-  $fullScreenButton?.addEventListener('click', handleFullScreenButton);
+  if (navigator.userAgent.indexOf('Safari') === -1) {
+    $fullScreenButton?.addEventListener('click', handleFullScreenButton);
+  } else {
+    $fullScreenButton?.remove();
+  }
 
   const $skipVideoButton = document.querySelector('.intro__video__skip');
   $skipVideoButton?.addEventListener('click', handleSkipVideoButton);
