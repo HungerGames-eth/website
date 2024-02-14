@@ -51,7 +51,7 @@ async function retrieveInfoData() {
     if (!info) return;
 
     const $total = $info.querySelector('[data-info-text="total"]');
-    $total.textContent = new Intl.NumberFormat().format(infoData[info]);
+    $total.textContent = new Intl.NumberFormat('en-US').format(infoData[info]);
 
     const $max = $info.querySelector('[data-info-text="max"]');
     $max.textContent = formatNumber(infoData.max[info]);
@@ -60,6 +60,12 @@ async function retrieveInfoData() {
       $info.parentElement.classList.add('finished');
     }
   });
+
+  const $quest = document.querySelector('[data-info-text="quest"]');
+  $quest.textContent = '#' + String(infoData.currentQuest).padStart(2, '0');
+
+  const $reward = document.querySelector('[data-info-text="reward"]');
+  $reward.textContent = infoData.max.reward;
 
   const $progressBar = document.querySelector('.progress-bar');
   $progressBar.style.setProperty('--progress-bar-percentage', getPercentageFromInfo(infoData) + '%');
@@ -81,6 +87,7 @@ async function retrieveInfoData() {
     const attributes = Object.keys(info.max);
 
     const sumPercentage = attributes.reduce(function (acc, attribute) {
+      if (!info[attribute]) return acc;
       const percentage = Math.min(info[attribute] * 100 / info.max[attribute], 100);
       return acc + percentage;
     }, 0);

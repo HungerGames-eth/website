@@ -649,6 +649,11 @@ h2 {
   display: block;
   text-align: center;
 }
+.hero__txt-box .font-1 span {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
 .hero__txt-box p {
   color: #4A2222;
 }
