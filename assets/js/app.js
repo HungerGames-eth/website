@@ -13,6 +13,9 @@ function handleEnterSiteButtonClick() {
   const $welcomeIntro = document.querySelector('.intro__welcome');
   $welcomeIntro.remove();
 
+  const $videoWrapper = document.querySelector('.intro__video-wrapper');
+  $videoWrapper.classList.add('show');
+
   const $video = document.querySelector('.intro video');
   $video.play();
 }

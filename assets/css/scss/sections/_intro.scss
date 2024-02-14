@@ -35,15 +35,24 @@
   }
 
   &__video {
-    width: 100%;
-    height: 100%;
-    background-color: #150D0E;
-    padding: 5%;
-    overflow-y: auto;
+    &-wrapper {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      background-color: #150D0E;
+      padding: 5%;
+      overflow-y: auto;
 
+      &.show {
+        display: flex;
+      }
+    }
+
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+    margin: auto;
 
     &__content {
       max-width: 76rem;
@@ -93,6 +102,35 @@
 
       &:hover {
         border-color: #FFF;
+      }
+    }
+
+    @include responsive(s) {
+      &__footer {
+        button {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    @include responsive(33.75rem) {
+      &__footer {
+        row-gap: 1.25rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__skip {
+        order: -1;
+      }
+    }
+
+    @include responsive(xs) {
+      &__footer {
+        button {
+          padding: 1.125rem 0.75rem;
+          font-size: 1rem;
+        }
       }
     }
   }
