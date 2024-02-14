@@ -1,3 +1,5 @@
+import { MenuHamburger } from "./menuHamburger.js";
+
 function bootstrap() {
   const $enterSiteButton = document.querySelector('.intro__welcome__button');
   $enterSiteButton?.addEventListener('click', handleEnterSiteButtonClick);
@@ -12,6 +14,8 @@ function bootstrap() {
   $video?.addEventListener('ended', handleVideoEnded);
 
   retrieveInfoData();
+
+  new MenuHamburger('.menu-hamburger');
 }
 
 function handleEnterSiteButtonClick() {

@@ -53,30 +53,98 @@
   </div>
 
   <!-- HEADER -->
-  <header id="header">
-    <div class="header container">
-      <a href="#" class="header__logo">
-        <img src="" alt="">
-        <p>Hunger</p>
-      </a>
-      <nav>
-        <ul class="ul">
-          <li>
-            <a target="_blank" href="https://uniswap.org/">Buy Token</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://t.me/turegod">Telegram</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/home">Twitter</a>
-          </li>
-          <li>
-            <a target="_blank" href="#">GitBook</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header__content container">
+        <a href="/" class="header__logo">
+          <img src="./assets/img/icon/logo.svg" alt="Logo" />
+          <p>Hunger</p>
+        </a>
+        <nav class="header__links-wrapper">
+          <ul class="ul header__links">
+            <li>
+                <a target="_blank" href="https://uniswap.org/">Buy Token</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/turegod">Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/home">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="#">GitBook</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-hamburger">
+          <div class="menu-hamburger__line"></div>
+          <div class="menu-hamburger__line"></div>
+          <div class="menu-hamburger__line"></div>
+        </button>
+      </div>
+    </header>
+
+    <nav class="header__links--mobile">
+      <ul class="ul">
+        <li>
+          <a target="_blank" href="https://uniswap.org/" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Buy Token
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://t.me/turegod" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Telegram
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/home" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Twitter
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    GitBook
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
