@@ -787,11 +787,13 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
 }
-.hero__txt img {
+.hero__txt-img img {
   position: absolute;
   bottom: 0;
-  right: 120px;
+  left: 0;
   z-index: 1;
+  height: 43.75rem;
+  width: 100%;
 }
 .hero__txt-box, .hero__txt .btn {
   position: relative;
@@ -800,8 +802,9 @@ h2 {
 .hero__txt-box {
   background-color: #977933;
   padding: 20px;
-  margin-right: 160px;
-  margin-left: 70px;
+  max-width: 31.25rem;
+  margin: 0 auto;
+  width: 90%;
 }
 .hero__txt-box .font-1 {
   background-color: #150D0E;

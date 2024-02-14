@@ -11,11 +11,15 @@
     padding: 20px;
     position: relative;
     align-items: center;
-    img {
-      position: absolute;
-      bottom: 0;
-      right: 120px;
-      z-index: 1;
+    &-img {
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        height: 43.75rem;
+        width: 100%;
+      }
     }
     &-box, .btn {
       position: relative;
@@ -24,8 +28,9 @@
     &-box {
       background-color: #977933;
       padding: 20px;
-      margin-right: 160px;
-      margin-left: 70px;
+      max-width: 31.25rem;
+      margin: 0 auto;
+      width: 90%;
       .font-1 {
         background-color: #150D0E;
         color: white;
