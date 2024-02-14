@@ -3,14 +3,13 @@ function bootstrap() {
   $enterSiteButton?.addEventListener('click', handleEnterSiteButtonClick);
 
   const $fullScreenButton = document.querySelector('.intro__video__full-screen');
-  if (navigator.userAgent.indexOf('Safari') === -1) {
-    $fullScreenButton?.addEventListener('click', handleFullScreenButton);
-  } else {
-    $fullScreenButton?.remove();
-  }
+  $fullScreenButton?.addEventListener('click', handleFullScreenButton);
 
   const $skipVideoButton = document.querySelector('.intro__video__skip');
   $skipVideoButton?.addEventListener('click', handleSkipVideoButton);
+
+  const $video = document.querySelector('.intro video');
+  $video.addEventListener('ended', handleVideoEnded);
 }
 
 function handleEnterSiteButtonClick() {
@@ -33,6 +32,10 @@ function handleSkipVideoButton() {
   const $intro = document.querySelector('.intro');
   $intro.remove();
   document.documentElement.classList.remove('no-scroll');
+}
+
+function handleVideoEnded() {
+  handleSkipVideoButton();
 }
 
 document.addEventListener('DOMContentLoaded', bootstrap);
