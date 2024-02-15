@@ -71,19 +71,20 @@ body {
 	text-decoration: none;
 	color: #150D0E;
 	font-family: $font;
+  box-sizing: border-box;
 }
 
 .container {
 	max-width: $container-xl;
 	margin: 0 auto;
 	border: 2px solid red;
-  @include responsive(m){
+  @include responsive(m) {
     border: 2px solid greenyellow;
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     border: 2px solid blue;
   }
-  @include responsive(s){
+  @include responsive(s) {
     border: 2px solid tomato;
   }
 }
@@ -151,7 +152,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  @include responsive(s){
+  @include responsive(s) {
     width: 100%;
   }
 }
@@ -162,4 +163,8 @@ body {
 
 .ul {
   list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

@@ -2,7 +2,7 @@ import gulp from "gulp";
 import gulpSass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 
-import sassLib from "sass";
+import * as sassLib from "sass";
 
 const sass = gulpSass(sassLib);
 

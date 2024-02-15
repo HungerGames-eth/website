@@ -28,7 +28,7 @@
       display: block;
     }
   }
-  @include responsive(m){
+  @include responsive(m) {
     margin: 0 20px;
     &__grid {
       grid-template-columns: auto 400px;
@@ -40,7 +40,7 @@
       }
     }
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     &__grid {
       grid-template-columns: 1fr;
     }
@@ -69,14 +69,14 @@
       }
     }
   }
-  @include responsive(m){
+  @include responsive(m) {
     .contract {
       &__grid {
         grid-template-columns: 400px auto;
       }
     }
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     .contract {
       &__grid {
         grid-template-columns: 1fr;
@@ -91,7 +91,7 @@
       }
     }
   }
-  @include responsive(s){
+  @include responsive(s) {
     .contract {
       &__txt {
         padding: 0 20px 20px 20px;

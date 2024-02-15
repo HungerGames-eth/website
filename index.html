@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="no-scroll">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,50 +23,128 @@
 </head>
 <body>
 
-  <!-- p1 -->
-  <a href="#" class="btn btn-pri">
-    <div class="mb-ring">
-      <div class="mb-edge">
-        <div class="mb-body">
-          <span>
-            Enter the arena
-          </span>
+  <div class="intro">
+    <div class="intro__welcome" style="--bg-img: url('./assets/img/bg-wallpaper.webp')">
+      <button class="btn btn-pri intro__welcome__button">
+        <div class="mb-ring">
+          <div class="mb-edge">
+            <div class="mb-body">
+              <span>
+                Access the website
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="mb-overlay"></div>
+      </button>
+    </div>
+
+    <div class="intro__video-wrapper">
+      <div class="intro__video">
+        <div class="intro__video__content">
+          <video src="./assets/video/welcome-video.mp4" controls></video>
+        </div>
+        <div class="intro__video__footer">
+          <button class="intro__video__full-screen">Full screen</button>
+          <button class="intro__video__skip">Skip introduction</button>
         </div>
       </div>
     </div>
-    <div class="mb-overlay"></div>
-  </a>
-
-  <!-- p2 -->
-  video
-  <button>Full Screen</button>
-  <button>Skip Intro</button>
+  </div>
 
   <!-- HEADER -->
-  <header id="header">
-    <div class="header container">
-      <a href="#" class="header__logo">
-        <img src="" alt="">
-        <p>Hunger</p>
-      </a>
-      <nav>
-        <ul class="ul">
-          <li>
-            <a target="_blank" href="https://uniswap.org/">Buy Token</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://t.me/turegod">Telegram</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/home">Twitter</a>
-          </li>
-          <li>
-            <a target="_blank" href="#">GitBook</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header__content container">
+        <a href="/" class="header__logo">
+          <img src="./assets/img/icon/logo.svg" alt="Logo" />
+          <p>Hunger</p>
+        </a>
+        <nav class="header__links-wrapper">
+          <ul class="ul header__links">
+            <li>
+                <a target="_blank" href="https://uniswap.org/">Buy Token</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/turegod">Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/home">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="#">GitBook</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-hamburger">
+          <div class="menu-hamburger__line"></div>
+          <div class="menu-hamburger__line"></div>
+          <div class="menu-hamburger__line"></div>
+        </button>
+      </div>
+    </header>
+
+    <nav class="header__links--mobile">
+      <ul class="ul">
+        <li>
+          <a target="_blank" href="https://uniswap.org/" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Buy Token
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://t.me/turegod" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Telegram
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/home" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    Twitter
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#" class="btn btn-pri">
+            <div class="mb-ring">
+              <div class="mb-edge">
+                <div class="mb-body">
+                  <span>
+                    GitBook
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-overlay"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
@@ -80,20 +158,62 @@
           <img src="assets/img/table.webp" alt="Table Hunter Frog">
         </div>
         <div class="hero__txt-box">
-          <span class="font-1">Quest #01</span>
+          <p class="font-1">
+            Quest
+            <span data-info-text="quest"></span>
+          </p>
+
           <p>Buy 1hunger and keep it till the end of the quest, never selling a single portion.</p>
-          <input type="text">
+
+          <div class="progress-bar">
+            <div class="progress-bar__line"></div>
+            <div class="progress-bar__square"></div>
+          </div>
+
           <div class="hero__item">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined finished-icon">
               new_releases
             </span>
-            <p>408/300 Holders</p>
-            <div class="hero__reward">
-              <div>
-                <img src="" alt="">
-                <p>Reward</p>
-                <a href="">Learn More</a>
-              </div>
+            <span class="material-symbols-outlined pending-icon">
+              schedule
+            </span>
+            <p data-info="holders">
+              <span data-info-text="total"></span>/<span data-info-text="max"></span>
+              Holders
+            </p>
+          </div>
+
+          <div class="hero__item">
+            <span class="material-symbols-outlined finished-icon">
+              new_releases
+            </span>
+            <span class="material-symbols-outlined pending-icon">
+              schedule
+            </span>
+            <p data-info="volume">
+              <span data-info-text="total"></span>/<span data-info-text="max"></span>
+              Volume
+            </p>
+          </div>
+
+          <div class="hero__item">
+            <span class="material-symbols-outlined finished-icon">
+              new_releases
+            </span>
+            <span class="material-symbols-outlined pending-icon">
+              schedule
+            </span>
+            <p data-info="marketCap">
+              <span data-info-text="total"></span>/<span data-info-text="max"></span>
+              Market Cap
+            </p>
+          </div>
+
+          <div class="hero__reward">
+            <div>
+              <!-- <img src="" alt=""> -->
+              <p data-info-text="reward">Reward</p>
+              <a href="">Learn More</a>
             </div>
           </div>
         </div>
@@ -339,5 +459,6 @@
     </div>
   </footer>
 
+  <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>
