@@ -801,6 +801,7 @@ h2 {
 }
 .hero__txt-box {
   background-color: #977933;
+  border-radius: 10px;
   padding: 20px;
   max-width: 31.25rem;
   margin: 0 auto;
@@ -840,6 +841,10 @@ h2 {
   -webkit-column-gap: 0.25rem;
   -moz-column-gap: 0.25rem;
   column-gap: 0.25rem;
+  margin-bottom: 10px;
+}
+.hero__item p {
+  font-size: 1.125rem;
 }
 .hero__item.finished {
   color: #4A2222;
@@ -857,10 +862,69 @@ h2 {
 .hero__item .finished-icon {
   display: none;
 }
+.hero__reward {
+  background-color: white;
+  border-radius: 10px;
+}
+.hero__reward div {
+  background-color: #4A2222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+.hero__reward div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.hero__reward div a {
+  font-size: 0.875rem;
+}
+.hero__reward div p, .hero__reward div a, .hero__reward div span {
+  color: white !important;
+}
+.hero [data-info-text=reward] {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+}
 @media screen and (max-width: 1140px) {
-  .hero {
+  .hero__img {
     display: none;
   }
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .hero__txt {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .hero__txt img {
+    height: 65vh;
+  }
+  .hero .btn {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .hero__txt-box {
+    width: 85%;
+  }
+}
+
+#hero-quests-txt {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #66542A;
 }
 
 .intro {

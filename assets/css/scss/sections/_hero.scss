@@ -27,6 +27,7 @@
     }
     &-box {
       background-color: #977933;
+      border-radius: 10px;
       padding: 20px;
       max-width: 31.25rem;
       margin: 0 auto;
@@ -61,6 +62,10 @@
     align-items: center;
     color: #150D0E;
     column-gap: 0.25rem;
+    margin-bottom: 10px;
+    p{
+      font-size: 1.125rem;
+    }
 
     &.finished {
       color: #4A2222;
@@ -83,7 +88,60 @@
       display: none;
     }
   }
-  @include responsive(m) {
-    display: none;
+  &__reward{
+    background-color: white;
+    border-radius: 10px;
+    div{
+      background-color: #4A2222;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      a{
+        font-size: 0.875rem;
+      }
+      p, a, span{
+        color: white !important;
+      }
+    }
   }
+  [data-info-text="reward"]{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  @include responsive(m){
+    &__img{
+      display: none;
+    }
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__txt{
+      max-width: 500px;
+      margin: 0 auto;
+      img{
+        height: 65vh;
+      }
+    }
+    .btn{
+      margin-top: 10px;
+    }
+  }
+  @include responsive(s){
+    &__txt-box{
+      width: 85%;
+    }
+  }
+}
+
+#hero-quests-txt{
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #66542A;
 }

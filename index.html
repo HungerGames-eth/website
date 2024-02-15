@@ -150,7 +150,7 @@
   <section class="hero">
     <div class="container hero__grid">
       <!-- IMG -->
-      <img src="/assets/img/pepe-hero.webp" alt="Hunger Pepe - Journey">
+      <img class="hero__img" src="/assets/img/pepe-hero.webp" alt="Hunger Pepe - Journey">
 
       <!-- TXT -->
       <div class="hero__txt flex-column">
@@ -158,12 +158,12 @@
           <img src="assets/img/table.webp" alt="Table Hunter Frog">
         </div>
         <div class="hero__txt-box">
-          <p class="font-1">
+          <p id="hero-quests" class="font-1">
             Quest
             <span data-info-text="quest"></span>
           </p>
 
-          <p>Buy 1hunger and keep it till the end of the quest, never selling a single portion.</p>
+          <p id="hero-quests-txt">Buy 1hunger and keep it till the end of the quest, never selling a single portion.</p>
 
           <div class="progress-bar">
             <div class="progress-bar__line"></div>
@@ -210,11 +210,16 @@
           </div>
 
           <div class="hero__reward">
-            <div>
-              <!-- <img src="" alt=""> -->
-              <p data-info-text="reward">Reward</p>
+            <div class="space-between">
+              <p>
+                <span class="material-symbols-outlined">
+                  workspace_premium
+                </span>
+                Reward
+              </p>
               <a href="">Learn More</a>
             </div>
+            <p data-info-text="reward">Reward</p>
           </div>
         </div>
 
