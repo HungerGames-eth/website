@@ -90,13 +90,16 @@ async function retrieveInfoData() {
   function getPercentageFromInfo(info) {
     const attributes = Object.keys(info.max);
 
+    let attributesQuant = 0;
+
     const sumPercentage = attributes.reduce(function (acc, attribute) {
-      if (!info[attribute]) return acc;
+      if (!info[attribute] && info[attribute] !== 0) return acc;
       const percentage = Math.min(info[attribute] * 100 / info.max[attribute], 100);
+      attributesQuant++;
       return acc + percentage;
     }, 0);
 
-    const result = sumPercentage / attributes.length;
+    const result = sumPercentage / attributesQuant;
 
     return result;
   }
