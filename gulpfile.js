@@ -1,6 +1,8 @@
 import gulp from "gulp";
 import gulpSass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
+import browserSync from "browser-sync";
+const bs = browserSync.create();
 
 import * as sassLib from "sass";
 
@@ -12,7 +14,6 @@ function compilaSass() {
     .pipe(sass())
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
         cascade: false,
       })
     )
@@ -23,7 +24,11 @@ gulp.task("sass", compilaSass);
 
 function watch() {
   compilaSass();
-  gulp.watch("assets/css/scss/**/*.scss", compilaSass);
+  bs.init({
+    server: "./", // ou a pasta onde está o index.html
+  });
+  gulp.watch("assets/css/scss/**/*.scss", compilaSass).on("change", bs.reload);
+  gulp.watch("*.html").on("change", bs.reload);
 }
 
 gulp.task("watch", watch);
