@@ -1,0 +1,28 @@
+{
+  "quests": {
+    "#1": {
+      "holders": 300,
+      "volume": 300000,
+      "marketCap": 300000,
+      "reward": "25% BUYBACK of the POT"
+    },
+    "#2": {
+      "holders": 500,
+      "volume": 600000,
+      "marketCap": 600000,
+      "reward": "50% BUYBACK of the POT"
+    },
+    "#3": {
+      "holders": 700,
+      "volume": 1000000,
+      "marketCap": 1000000,
+      "reward": ""
+    }
+  },
+  "data": {
+    "currentQuest": 1,
+    "holders": 0,
+    "volume": 300000,
+    "marketCap": 300000
+  }
+}
